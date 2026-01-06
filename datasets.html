@@ -29,8 +29,31 @@
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript">
+function toggleBibtex(id) {
+  var el = document.getElementById("bib_" + id);
+  if (el.style.display === "none" || el.classList.contains("noshow")) {
+    el.style.display = "block";
+    el.classList.remove("noshow");
+  } else {
+    el.style.display = "none";
+    el.classList.add("noshow");
+  }
+}
+</script>
 		<style>
-		.dataset_body{     font-size: 0.9em;   
+.bibtex {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}
+.noshow { display: none; }
+</style>
+		<style>
+		.dataset_body{     font-size: 0.7em;   
 					  line-height: 1.5;
 }
 
@@ -158,10 +181,10 @@
 				            Isharah is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation. It features over 30,000 video samples signed by deaf and hearing-impaired individuals using smartphones in varied settings.
 
 				        </p>
-												<p> 
-						<a href=""> [Datase] </a>
+												<p class="dataset_body"> 
+						<a href="https://snalyami.github.io/Isharah_CSLR/"> [Datase] </a>
 						<a href=""> [BibTeX] </a>
-						<a href=""> [PDF] </a>	
+						<a href="https://arxiv.org/pdf/2506.03615"> [PDF] </a>	
 						</p>
 
 				    </div>
@@ -179,9 +202,18 @@
 				        </p>
 						<p> 
 						<a href=""> [Datase] </a>
-						<a href=""> [BibTeX] </a>
+						<a href="javascript:toggleBibtex('alyami2025isharah')"> [BibTeX] </a>
 						<a href=""> [PDF] </a>	
 						</p>
+						<div id="alyami2025isharah" class="bibtex noshow">
+						<pre>
+						@article{alyami2025isharah,
+						  title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition},
+						  author={Alyami, Sarah and Luqman, Hamzah and Al-Azani, Sadam and Alowaifeer, Maad and Alharbi, Yazeed and Alonaizan, Yaser},
+						  journal={arXiv preprint arXiv:2506.03615},
+						  year={2025}
+						}
+						</pre>
 				    </div>
 				</div>
                     </div>
