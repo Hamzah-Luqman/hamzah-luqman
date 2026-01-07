@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8"/>
-        <title>Hamzah Luqman</title>
+        <title>Hamzah Luqman | Datasets</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
         <!-- Font Awesome Icons -->
@@ -29,7 +29,7 @@
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript">
+		 <script type="text/javascript">
 function toggleBibtex(id) {
   var el = document.getElementById("bib_" + id);
   if (el.style.display === "none" || el.classList.contains("noshow")) {
@@ -41,7 +41,12 @@ function toggleBibtex(id) {
   }
 }
 </script>
+		 
+		
 		<style>
+		.dataset_body{     font-size: 0.7em;   
+					  line-height: 1.5;
+}
 .bibtex {
   margin-top: 10px;
   padding: 10px;
@@ -52,7 +57,6 @@ function toggleBibtex(id) {
 }
 .noshow { display: none; }
 </style>
-		
     </head>
     
     <body id="page-top" class="index">
@@ -110,7 +114,7 @@ function toggleBibtex(id) {
                         </li>
 
                                                 <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="Teaching.html">Teaching</a>
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="teaching.html">Teaching</a>
                         </li>
                                                 <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-slrg-content').show();" href="slrg.html">SLRG Lab</a>
@@ -120,11 +124,11 @@ function toggleBibtex(id) {
                         </li>
 
                                                                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="#students">Students</a>
+                            <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="students.html">Students</a>
                         </li>
 
                         <li class="page-scroll">
-                            <a href="talks/">Talks</a>
+                            <a href="talks.html/">Talks</a>
                         </li>
 <!-- 
                                                 <li class="page-scroll">
@@ -139,18 +143,14 @@ function toggleBibtex(id) {
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
                         </li> -->
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li>
+                      
                     </ul>
                 </div><!-- /.navbar-collapse -->
                 
                 <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
+                <!-- <div class="collapse" id="bs-example-navbar-collapse-2">
                     <gcse:search></gcse:search>
-                        </div>
+                        </div> -->
                 
             </div><!-- /.container-fluid -->
         </nav>
@@ -159,28 +159,65 @@ function toggleBibtex(id) {
         
        
         <p></p>
-    
- <section  name="patents" id="patents">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none; font-family:'FontAwesome';font-style:normal;font-weight:normal;"" id="tab-publications-content">
-                        <hr class="star-primary">
-                        
-                          <h2>  Datasets </h2>
-						<br>
- 
+				
 
-	     
-                    </div>
-                </div>
+		
+
+<!-- ######################################################### -->		
+<!-- ######################################################### -->		
+<section  name="ArabicOCR" id="ArabicOCR">
+            <div class="container lead">
+				<div  style="text-align: center;">
+									<hr class="star-primary">
+                        
+                        <h2 style="font-size: 0.8em;"> 
+							<a href="#datasets_sl">  Sign Language Datasets  </a>  &nbsp | 
+							 <a href="#arabic_nlp">  Arabic NLP Datasets  </a>  | 
+							<span class="label label-warning"><a href="#ArabicOCR"> <font color=white> Arabic OCR  </font> </a> </span>
+						</h2>
+					 <br>
+				</div>
+				
+				
+
+				<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/khatt.jpg" class="img-responsive img-thumbnail" alt="Online-KHATT Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="#" target="_blank">Online-KHATT dataset </a></h4>
+				        <p class="dataset_body">
+The database consists of 10,040 lines of Arabic handwritten text written by 623 writers using Android- and Windows-based devices. We have segmented part of the collected data into characters along with their ground
+truths.				        </p>
+												<p class="dataset_body"> 
+						<a href="#" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('mahmoud2018online')"> [BibTeX] </a>
+						<a href="https://benthamopenarchives.com/contents/pdf/TOCSJ/TOCSJ-12-42.pdf" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="mahmoud2018online" class="bibtex noshow">
+						<pre>
+						@article{mahmoud2018online,
+  title={Online-khatt: an open-vocabulary database for Arabic online-text processing},
+  author={Mahmoud, Sabri A and Luqman, Hamzah and Al-Helali, Baligh M and BinMakhashen, Galal and Parvez, Mohammad Tanvir},
+  journal={The Open Cybernetics \& Systemics Journal},
+  volume={12},
+  number={1},
+  pages={42--59},
+  year={2018}
+}
+						</pre>
+				    </div>
+			
+				    </div>
+				</div>
+<!--  -->				
+			
+				
             </div>
         </section>
 		
-	
+<!-- ######################################################### -->	
 		
        
         
