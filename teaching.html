@@ -1,265 +1,189 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8"/>
-        <title>Hamzah Luqman | Datasets</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css"/>
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-         <![endif]-->
-        
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
- <style>
-      .courses_section {
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Hamzah Luqman | Teaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/menucollapse.js"></script>
+  <script src="js/arrow78.js"></script>
+  <script src="js/custom.js"></script>
+
+  <style>
+    .courses_section {
       font-family: -apple-system, BlinkMacSystemFont,
                    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      margin: 40px auto;
-      max-width: 800px;
       color: #222;
-    }  
+    }
 
-    /* header {
-      text-align: center;
-      margin-bottom: 30px;
-    } */
-
- 
-    .h2_courses { font-size: 1.5rem;  margin: 0.5em 0; font-weight: bold;}
-
-    .semester {
-      margin-top: 1.5em;
+    .h2_courses {
+      font-size: 1.5rem;
+      margin: 0.5em 0;
+      font-weight: bold;
     }
 
     .ul_courses {
       list-style: none;
       padding-left: 0;
     }
+
     .li_courses {
       margin-bottom: 0.3em;
-		margin-left: 30px;
+      margin-left: 30px;
     }
 
-  
+    aside {
+      font-family: -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      color: #333;
+    }
 
-    
+    aside a {
+      color: #0645AD;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
   </style>
-    </head>
-    
-    <body id="page-top" class="index">
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- <span><a href="#"><img border="0" width="170" src="images/kfupm-seeklogo.png"/></a></span> -->
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                         <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="index.html">Home</a>
-                        </li>
+</head>
 
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="publications.html">Publications</a>
-                        </li>
+<body id="page-top" class="index">
 
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-systems-content').show();" href="datasets.html">Datasets</a>
-                        </li>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="teaching.html">Teaching</a>
-                        </li>
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-slrg-content').show();" href="slrg.html">SLRG Lab</a>
-                        </li>
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-vll-content').show();" href="vll.html">VLL </a>
-                        </li>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="datasets.html">Datasets</a></li>
+        <li class="active"><a href="teaching.html">Teaching</a></li>
+        <li><a href="slrg.html">SLRG Lab</a></li>
+        <li><a href="vll.html">VLL</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="talks.html">Talks</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                                                                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="students.html">Students</a>
-                        </li>
+<p><br><br><br></p>
 
-                        <li class="page-scroll">
-                            <a href="talks.html/">Talks</a>
-                        </li>
-<!-- 
-                                                <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
-                        </li> -->
+<!-- ================= CONTENT ================= -->
+<section id="courses">
+  <div class="container">
+    <div class="row">
 
+      <!-- LEFT COLUMN: INSTRUCTOR INFO -->
+      <aside class="col-md-4 col-lg-3">
+        <h3><strong>Hamzah Luqman</strong></h3>
+        <p>Assistant Professor</p>
+        <p>Computer Science</p>
+        <p>KFUPM</p>
 
-                        <!-- <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
-                        </li>
-                        
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
-                        </li> -->
-                      
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                
-                <!-- search box submenu -->
-                <!-- <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div> -->
-                
-            </div><!-- /.container-fluid -->
-        </nav>
-        
-      
-        
-       
-        <p> <br></p>
-				
+        <hr>
 
-		
+        <p>
+          <i class="fa fa-envelope"></i>
+          hamzah.luqman@kfupm.edu.sa
+        </p>
 
-<!-- ######################################################### -->	
-		
-<!-- ######################################################### -->		
-<section  name="courses" id="courses" >
-		<div class="courses_section">
- <h2 class="semester h2_courses">Fall 2025 </h2>
-					 
-<ul class="ul_courses"><li class="li_courses"> ICS-471: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-589: Special Topics in LLMs</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-606: Independent Research</li></ul> 
+        <p>
+          <i class="fa fa-globe"></i>
+          <a href="https://hamzahlq.github.io" target="_blank">
+            Personal Website
+          </a>
+        </p>
 
+        <p>
+          <i class="fa fa-google"></i>
+          <a href="#" target="_blank">Google Scholar</a>
+        </p>
 
-<h2 class="semester h2_courses">Fall 2024 </h2>
-<ul class="ul_courses"><li class="li_courses">ICS-471\ICS504: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-606: Independent Research</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-701: Directed Research I</li></ul>
+        <p>
+          <i class="fa fa-github"></i>
+          <a href="#" target="_blank">GitHub</a>
+        </p>
+      </aside>
 
-			<h2 class="semester h2_courses">Spring 2024 </h2>
+      <!-- RIGHT COLUMN: COURSES -->
+      <main class="col-md-8 col-lg-9">
+        <div class="courses_section">
 
-<ul class="ul_courses"><li class="li_courses">ICS-104: Introduction to Programming in Python & C</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-506: Natural Language Processing</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-619: Project</li></ul>
+          <h2 class="h2_courses">Fall 2025</h2>
+          <ul class="ul_courses">
+            <li class="li_courses">ICS-471: Deep Learning</li>
+            <li class="li_courses">ICS-589: Special Topics in LLMs</li>
+            <li class="li_courses">ICS-606: Independent Research</li>
+          </ul>
 
-<h2 class="semester h2_courses">Fall 2023 </h2>
+          <h2 class="h2_courses">Fall 2024</h2>
+          <ul class="ul_courses">
+            <li class="li_courses">ICS-471 / ICS-504: Deep Learning</li>
+            <li class="li_courses">ICS-606: Independent Research</li>
+            <li class="li_courses">ICS-701: Directed Research I</li>
+          </ul>
 
-<ul class="ul_courses"><li class="li_courses">ICS-471\504: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-590: Special Topics in Deep Learning</li></ul>
+          <h2 class="h2_courses">Spring 2024</h2>
+          <ul class="ul_courses">
+            <li class="li_courses">ICS-104: Introduction to Programming in Python & C</li>
+            <li class="li_courses">ICS-506: Natural Language Processing</li>
+            <li class="li_courses">ICS-619: Project</li>
+          </ul>
 
-			<h2 class="semester h2_courses">Spring 2023 </h2>
+          <h2 class="h2_courses">Fall 2023</h2>
+          <ul class="ul_courses">
+            <li class="li_courses">ICS-471 / 504: Deep Learning</li>
+            <li class="li_courses">ICS-590: Special Topics in Deep Learning</li>
+          </ul>
 
-<ul class="ul_courses"><li class="li_courses">ICS-104: Intro. to Prog. in Python & C</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-506\582: Natural Language Processing</li></ul>
-<ul class="ul_courses"><li class="li_courses">SWE-411: Software Engineering Project I</li></ul>
+          <h2 class="h2_courses">Spring 2023</h2>
+          <ul class="ul_courses">
+            <li class="li_courses">ICS-104: Intro. to Programming in Python & C</li>
+            <li class="li_courses">ICS-506 / 582: Natural Language Processing</li>
+            <li class="li_courses">SWE-411: Software Engineering Project I</li>
+          </ul>
 
+        </div>
+      </main>
 
-<h2 class="semester h2_courses">Fall 2022 </h2>
+    </div>
+  </div>
+</section>
 
-<ul class="ul_courses"><li class="li_courses">ICS-471: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-590: Special Topics in Deep Learning</li></ul>
+<hr>
 
-<h2 class="semester h2_courses">Spring 2022 </h2>
+<footer>
+  <small>
+    <center>
+      © 2026 | Hamzah Luqman. Credits: AR template
+    </center>
+  </small>
+</footer>
 
-<ul class="ul_courses"><li class="li_courses">ICS-504: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-547: Digital Image Processing</li></ul>
-
-
-<h2 class="semester h2_courses">Fall 2021 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-471: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-582: Natural Language Processing</li></ul>
-
-<h2 class="semester h2_courses">Spring 2021 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-504: Deep Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-619: Project</li></ul>
-
-<h2 class="semester h2_courses">Fall 2020 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-502: Machine Learning</li></ul>
-<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
-
-<h2 class="semester h2_courses">Spring 2020 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-483\505: Computer Vision</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-701: Directed Research I</li></ul>
-<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
-
-
-<h2 class="semester h2_courses">Fall 2019 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-102: Introduction to Computing I</li></ul>
-<ul class="ul_courses"><li class="li_courses">ICS-483: Computer Vision</li></ul>
-<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
-
-<h2 class="semester h2_courses">Spring 2019 </h2>
-
-<ul class="ul_courses"><li class="li_courses">ICS-102: Introduction to Computing I</li></ul>
-<ul class="ul_courses"><li class="li_courses">SWE-363: Web Engineering & Development</li></ul>
-
-
-
-			
-
-			
-		
-				
-            </div>
-        </section>
-<!-- ######################################################### -->	
-		
-       
-        
-        <hr class="star-primary">
-        <footer>
-            <small>
-                <center>
-                    © 2026 | Hamzah Luqman. Credits: AR template
-                    <!-- <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a> -->
-                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
-                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                            https://github.com/dmsl/academic-responsive-template
-                        </a> ]
-                    </div>
-                </center>
-            </small>
-        </footer>
-        
-    </body>
-    
+</body>
 </html>
